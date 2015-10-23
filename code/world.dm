@@ -291,7 +291,7 @@ var/world_topic_spam_protect_time = world.timeofday
 		C.received_irc_pm = world.time
 		C.irc_admin = input["sender"]
 
-		C << 'sound/effects/adminhelp.ogg'
+		C << 'sound/effects/adminhelp_new.ogg'
 		C << message
 
 
