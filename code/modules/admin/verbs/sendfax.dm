@@ -4,6 +4,7 @@
 		faxes += F
 	return faxes
 
+/client/proc/sendFax(var/obj/machinery/photocopier/faxmachine/fax as obj in get_fax_machines())
 	set name = "Send Fax"
 	set category = "Admin"
 
@@ -24,6 +25,7 @@
 	var/customname = input(src, "Pick a title for the report", "Title") as text|null
 	var/input = "<center><b>[who] Fax Network</b></center><hr><center>[inputsubject]</center><hr>[inputmessage]<hr><b>Signed:</b> <i>[inputsigned]</i>"
 
+	if(!(fax.stat & (BROKEN|NOPOWER) ) )
 
 		// animate! it's alive!
 		flick("faxreceive", fax)
