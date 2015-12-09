@@ -294,14 +294,11 @@ var/list/admin_verbs_mod = list(
 	/datum/admins/proc/show_player_panel,
 	/client/proc/check_antagonists,
 	/client/proc/jobbans,
-<<<<<<< HEAD
 	/client/proc/cmd_admin_subtle_message,	/*send an message to somebody as a 'voice in their head'*/\
 	/client/proc/cmd_admin_rejuvenate
-=======
 	/client/proc/forceshuttles,
 	/client/proc/FRules,
 	/client/proc/cmd_admin_subtle_message 	/*send an message to somebody as a 'voice in their head'*/
->>>>>>> refs/remotes/origin/Master-Back-Up
 )
 
 var/list/admin_verbs_mentor = list(
@@ -313,12 +310,9 @@ var/list/admin_verbs_mentor = list(
 	/datum/admins/proc/show_player_info,
 //	/client/proc/dsay,
 	/client/proc/cmd_admin_subtle_message,
-<<<<<<< HEAD
 	/client/proc/freeze,
 	/client/proc/freezemecha
-=======
 	/client/proc/sendFax //*allows us to send a fax to a specific fax machine.*/
->>>>>>> refs/remotes/origin/Master-Back-Up
 )
 
 /client/proc/add_admin_verbs()
