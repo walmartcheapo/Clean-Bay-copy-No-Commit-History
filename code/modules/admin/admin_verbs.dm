@@ -295,10 +295,9 @@ var/list/admin_verbs_mod = list(
 	/client/proc/check_antagonists,
 	/client/proc/jobbans,
 	/client/proc/cmd_admin_subtle_message,	/*send an message to somebody as a 'voice in their head'*/\
-	/client/proc/cmd_admin_rejuvenate
+	/client/proc/cmd_admin_rejuvenate,
 	/client/proc/forceshuttles,
-	/client/proc/FRules,
-	/client/proc/cmd_admin_subtle_message 	/*send an message to somebody as a 'voice in their head'*/
+	/client/proc/FRules
 )
 
 var/list/admin_verbs_mentor = list(
@@ -311,7 +310,7 @@ var/list/admin_verbs_mentor = list(
 //	/client/proc/dsay,
 	/client/proc/cmd_admin_subtle_message,
 	/client/proc/freeze,
-	/client/proc/freezemecha
+	/client/proc/freezemecha,
 	/client/proc/sendFax //*allows us to send a fax to a specific fax machine.*/
 )
 
