@@ -8,8 +8,12 @@ var/list/admin_verbs_default = list(
 	/client/proc/hide_most_verbs,		/*hides all our hideable adminverbs*/
 	/client/proc/debug_variables,		/*allows us to -see- the variables of any instance in the game. +VAREDIT needed to modify*/
 //	/client/proc/check_antagonists,		/*shows all antags*/
-	/client/proc/cmd_mentor_check_new_players
+	/client/proc/cmd_mentor_check_new_players,
 //	/client/proc/deadchat				/*toggles deadchat on/off*/
+    /client/proc/clean,
+    /client/proc/cleartox,
+	/client/proc/admincryo,
+	/client/proc/alertlevel
 	)
 var/list/admin_verbs_admin = list(
 	/client/proc/player_panel_new,		/*shows an interface for all players, with links to various panels*/
@@ -290,6 +294,8 @@ var/list/admin_verbs_mod = list(
 	/datum/admins/proc/show_player_panel,
 	/client/proc/check_antagonists,
 	/client/proc/jobbans,
+	/client/proc/cmd_admin_subtle_message,	/*send an message to somebody as a 'voice in their head'*/\
+	/client/proc/cmd_admin_rejuvenate
 	/client/proc/forceshuttles,
 	/client/proc/FRules,
 	/client/proc/cmd_admin_subtle_message 	/*send an message to somebody as a 'voice in their head'*/
@@ -304,6 +310,8 @@ var/list/admin_verbs_mentor = list(
 	/datum/admins/proc/show_player_info,
 //	/client/proc/dsay,
 	/client/proc/cmd_admin_subtle_message,
+	/client/proc/freeze,
+	/client/proc/freezemecha
 	/client/proc/sendFax //*allows us to send a fax to a specific fax machine.*/
 )
 
